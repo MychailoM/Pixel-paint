@@ -3,10 +3,11 @@ import Picture from "./Picture";
 
 const EditPicturePlace = function () {
   const [color, setColor] = useState("#ffffff");
-  const [size, setSize] = useState(10); 
+  const [rows, setRows] = useState(10); 
+  const [columns, setColumns] = useState(10); 
 
   const save = () => {
-    console.log("Saved:", { color, size, num: size * size });
+    console.log("Saved:", { color, columns, rows, num: rows * columns });
   };
 
   return (
@@ -20,13 +21,20 @@ const EditPicturePlace = function () {
         />
         <input
           type="number"
-          value={size}
+          value={columns}
           min="10"
           step={5}
-          onChange={(e) => setSize(Number(e.target.value))}
+          onChange={(e) => setColumns(Number(e.target.value))}
+        />
+        <input
+          type="number"
+          value={rows}
+          min="10"
+          step={5}
+          onChange={(e) => setRows(Number(e.target.value))}
         />
       </div>
-      <Picture pixelsCount={size * size} width={size} color={color} />
+      <Picture pixelsCount={rows * columns}  columns={columns} rows={rows} color={color} />
     </div>
   );
 };

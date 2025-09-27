@@ -2,7 +2,7 @@ import React from "react";
 import Pixel from "./Pixel";
 import './styles/Picture.css'
 
-const Picture = function ({ pixelsCount, color, width }) {
+const Picture = function ({ pixelsCount, color, columns, rows }) {
   const picture = [];
   let i = 0;
 
@@ -12,7 +12,7 @@ const Picture = function ({ pixelsCount, color, width }) {
   }
 
   return (
-    <div style={{width: width * 22}} className="picture">
+    <div style={{width: columns * 32, height: rows * 32}} className="picture">
       {picture.map((val, i) => (
         <Pixel
           key={i}
