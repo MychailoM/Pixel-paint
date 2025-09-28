@@ -1,9 +1,12 @@
-    
-    .pixel{
-    width: 30px;
-    height: 30px;
-    margin: -0.5px;
-    box-sizing: content-box;
-    border: 1px solid #00000016;
-    }
+.pixelElement {
+  width: 32px;
+  height: 32px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
 
+.pixelElement:hover {
+  opacity: 0.8;
+}

@@ -1,0 +1,64 @@
+.editPictureContainer {
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.controls {
+  margin-bottom: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  align-items: center;  
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.saveButton {
+  padding: 6px 12px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  
+}
+
+.saveButton:hover {
+  background-color: #45a049;
+}
+
+.colorInput {
+  margin-left: 10px;  
+  border-radius: 4px;
+  border: 1px solid #1565c0;
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+}
+
+.numberControl {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.numberControl input {
+  width: 50px;
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.numberControl button {
+  padding: 4px 8px;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.numberControl button:hover {
+  background-color: #1565c0;
+}

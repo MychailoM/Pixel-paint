@@ -1,0 +1,26 @@
+.addPictureContainer {
+  margin-bottom: 20px;
+}
+
+.openButton, .closeButton {
+  padding: 8px 16px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 10px;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.openButton:hover, .closeButton:hover {
+  background-color: #1565c0;
+}
+
+.editWrapper {
+  padding: 15px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}

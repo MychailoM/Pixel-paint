@@ -1,6 +1,20 @@
-.picture {
+.pictureContainer {
   display: flex;
   flex-wrap: wrap;
-  
+  border: 2px solid #333;
+  background-color: #eaeaea;
+  margin: 0 auto; 
 }
 
+.pixel {
+  width: 32px;
+  height: 32px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.pixel:hover {
+  border-color: #999;
+}

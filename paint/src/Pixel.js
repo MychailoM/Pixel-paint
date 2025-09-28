@@ -1,14 +1,18 @@
 import React, { useState } from "react";
 import "./styles/Pixel.css";
 
-const Pixel = function ({ initialColor, selectedColor }) {
+const Pixel = ({ id, initialColor, selectedColor, onPaint }) => {
   const [color, setColor] = useState(initialColor);
 
-  const paint = () => setColor(selectedColor);
+  const paint = () => {
+    setColor(selectedColor);
+    onPaint(id, selectedColor);
+  };
 
   return (
     <div
-      className="pixel"
+      id={id}
+      className="pixelElement"
       style={{ backgroundColor: color }}
       onClick={paint}
     ></div>
